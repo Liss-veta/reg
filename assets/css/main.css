@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    animation: privet 10s infinite ease-in-out;
+    transition: all 0.4s;
+}
+
+.body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: "Book Antiqua";
+}
+
+form {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #444141;
+    border-radius: 3px;
+}
+
+label, button {
+    font-size: 16px;
+    font-family: "Book Antiqua";
+    margin: 10px 0px 10px 0px;
+    font-weight: bolder;
+}
+
+
+button {
+    height: 30px;
+    background-color: #880788;
+    cursor: pointer;
+    border: none;
+    border: 1px solid black;
+}
+
+button:hover
+{
+    background-color: #e909e9;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    background-color: #373737;
+}
+
+.voiti {
+    margin-bottom: 10px;
+}
+
+.msg{
+    background-color: #f0e9e7;
+    border: 2px solid #227466;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+#animation {
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+@keyframes privet {
+    0%{
+        background: linear-gradient(90deg, #666464, #848383);
+    }
+    25%{
+        background: linear-gradient(90deg, #504f50, #6e6c6c);
+    }
+    50%{
+        background: linear-gradient(90deg, #343033, #6f6077);
+    }
+    100%{
+        background: linear-gradient(90deg, #615166, #675252);
+    }
+
+}
